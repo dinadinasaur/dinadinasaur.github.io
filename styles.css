@@ -1,44 +1,12 @@
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #4867af;
-  border-radius: 20px;
-  overflow: scroll;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: Verdana;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #59e081;
-  color: rgb(8, 59, 20);
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #13b8b8;
-  color: white;
-}
-
 body {
-  background-color: #f2f2f2;
-  font-family: Verdana;
-  color: #b5148a;
+  background-color: aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
 .typed {
-  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
   width: 0;
+  text-decoration: none;
   animation: typing;
   animation-duration: 3s;
   animation-timing-function: steps(30, end);
@@ -48,4 +16,44 @@ body {
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #47c94b;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px 50px;;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+  text-decoration: none;
+}
+
+.btn:active {
+  background-color: #4CAF50;
+  text-decoration: none;
+  color: white;
+
+}
+
+html {
+  cursor: none;
+}
+
+#circularcursor {
+  background-color: pink;
+  border:1px solid pink;    
+  height:25px;
+  width:25px;
+  border-radius:50%;
+  top: var(--y);
+  left: var(--x);
+  position: absolute;
+
 }
